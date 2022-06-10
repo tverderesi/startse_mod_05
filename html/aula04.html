@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula04.css" />
+    <link rel="stylesheet" href="../css/basic.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aula 04</title>
+  </head>
+  <body>
+    <!-- Aula 04 - POSICIONAMENTO ● Os elementos são posicionados por meio das propriedades top,
+bottom, left, right ● Estas propriedades irão funcionar de acordo com o posicionamento definido ● Há
+5 tipos de posicionamento no HTML: ○ Estático ○ Relativo ○ Fixo ○ Absoluto ○ Stick-->
+
+display: inline -> exibe como elemento de linha display: block -> exibe como elemento de bloco
+display: inline-block -> em bloco/linha (prop de bloco p/ elementos de linha) */
+    <div class="text-focus-in">
+      <h1>Aula 04</h1>
+      <h2>Posicionamento</h2>
+      <hr />
+      <div>
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </div>
+      <section>
+      <h3>Tipos de Display</h3>
+      <ul><li> <code>display: none</code>: não apresenta nada nem ocupa nenhum espaço na
+      interface);</li>
+      <li><code>visibility: hidden</code>: ocupar o espaço do elemento, mas escondido;</li>
+      <li>outros valores de <code>visibility</code> são: <code>visible</code>, visível  ou
+      <code>collapse</code>, colapsado;</li>
+    </ul>
+   </section>
+      <div>
+        <h3>Posicionamento Estático</h3>
+        <ul>
+          <li>Este é o comportamento Padrão de Posicionamento</li>
+          <li>Ignora as propriedades<code>top, bottom, left, right</code>;</li>
+          <li>
+            Elementos estáticos seguem o fluxo de elementos disponíveis na páginas;
+          </li>
+          <li>
+            Esta propriedade é utilizada para desfazer (cancelar) um posicionamento atribuído por
+            outra regra HTML;
+          </li>
+        </ul>
+        <div class="simple_box">
+          <p class="static">Este é um elemento posicionado estaticamente.</p>
+        </div>
+      </div>
+      <div>
+        <h3>Positionamento Relativo</h3>
+        <ul>
+          <li>
+            Um elemento com posicionamento relativo é posicionado em relação à sua posição normal;
+          </li>
+          <li>
+            As propriedades
+            <code>top, bottom, left, right</code><strong>não</strong> serão ignorados
+          </li>
+          <li>Os espaços deixados pelo posicionamento não serão preenchidos</li>
+        </ul>
+
+        <h3>Exemplo:</h3>
+        <div class="simple_box">
+          <p class="a04relative">
+            Este é um elemento posicionamento relativamente. Os filhos desse elemento são definidos
+            em relação à esse posicionamento.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>Posicionamento Fixo</h3>
+        <ul>
+          <li>
+            Um elemento com posicionamento fixo é fixado em alguma posição da tela;
+          </li>
+          <li>
+            Sempre ira ocupar o mesmo espaço indepenentemente do conteúdo;
+          </li>
+          <li>
+            Será necessário definir pelo menos uma das propriedades
+            <strong><i>top, bottom, left, right</i></strong>
+          </li>
+          <li>Este tipo de posicionamento não irá deixar espaços.</li>
+        </ul>
+
+        <h3 class="aula04">Exemplo:</h3>
+
+        <div class="simple_box">
+          <div id="fakescreen">
+            <div id="origem"></div>
+            <p class="fake_fixed">
+              Este seria o elemento fixado na tela falsa de 800x600 pixels da caixa. <br />O ponto
+              vermelho é a origem da tela falsa. <br />
+              <code>position: fixed; left: 50px; top: 50px;</code>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>Posicionamento Absoluto</h3>
+        <ul class="aula04">
+          <li>
+            Um elemento com posicionamento absoluto será posicionado nas coordenadas a partir de seu
+            ancestral;
+          </li>
+          <li>
+            É necessário definir pelo menos uma das propriedades
+            <code>top, bottom, left, right</code>;
+          </li>
+          <li>
+            Esse tipo de posicionamento não irá deixar espaços e pode sobrescrever elementos;
+          </li>
+        </ul>
+
+        <h3>Exemplo:</h3>
+        <div class="simple_box">
+          <div id ="fakescreen2" class="relative">
+          <div id="origem2"></div>
+          <p class="abs">
+            Este é um elemento posicionado em relação à seu ancestral <code>(div id='fakescreen2').
+            </code><br>
+            O ponto vermelho indica a origem da tela.<br>
+            <code>{position: absolute; left: 50px; top: 50px;}</code>
+          
+          </div>
+          </p>
+        </div>
+      </div>
+      <div>
+      <h3>Posicionamento Sticky</h3>
+      <ul>
+        <li>
+          Um elemento com posicionamento sticky é posicionado com base na posição da barra de
+          rolagem do usuário.
+        </li>
+        <li>
+          Funciona como um elemento relativo e fixo de acordo com a barra de rolagem
+        </li>
+        <li>
+          É necessário definir pelo menos uma das propriedades
+          <strong><i>top, bottom, left, right</i></strong>
+        </li>
+        <li>
+          Este tipo de posicionamento não irá deixar espaços e pode sobrescrever elementos.
+        </li>
+      </ul>
+      <h3 id="a04e3">Exemplo:</h3>
+      <div id="fixedheight" class="simple_box">
+        
+        <br>
+        <div id="stricker" class="sticky">
+          Este é um elemento 'sticky' com posicionamento {position: sticky; top: 0px}. Ele não fixa
+          até chegar em seu local absoluto com a barra de rolagem.
+        </div>
+        <br>
+        <div id="tall">     
+        </div>
+      
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

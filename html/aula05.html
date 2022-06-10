@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula05.css" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+    </style>
+    <title>Aula 05</title>
+  </head>
+  <body>
+    <div class="text-focus-in">
+      <h1 id="aula05">Aula 05</h1>
+      <h2>Tamanho da Caixa</h2>
+      <hr />
+      <div>
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </div>
+      <div>
+        <div id="a051">
+          <p class="text">Um modelo de caixa:</p>
+          <div class="box" id="margein">
+            <p>Margem</p>
+            <div class="box" id="border">
+              <p>Borda</p>
+              <div class="box" id="espint">
+                <p>Espaçamento Interno</p>
+                <div class="box" id="content"><p>Conteúdo</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="a052">
+          <ul class="text">
+            <li>Por padrão o tamanho de um elemento é calculado por:</li>
+            <ul>
+              <li>Largura = width + padding + border</li>
+              <li>Altura = height + padding + border</li>
+            </ul>
+            <li>
+              Ao definir uma altura ou largura o elemento terá um valor mairo
+              que o definido.
+            </li>
+            <li>
+              Podemos corrigir este comportamento através da propriedade
+              <strong>box-sizing</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="a52">
+          <p class="text">Exemplo 1:</p>
+          <div class="simplebox">
+            <div class="ex1"></div>
+            <div class="ex2"></div>
+            <p class="text">
+              Estes dois elementos tem as mesmas propriedades
+              <code>width, height</code>. Para resolver isso basta colorcarmos a
+              propriedade <code>box sizing</code>.
+            </p>
+
+            <div class="ex1 border-box"></div>
+            <div class="ex2 border-box"></div>
+          </div>
+        </div>
+
+        <div>
+          <p class="text">Exemplo 2:</p>
+          <div class="simplebox">
+            <div id="ex3page">
+              <div>box 1</div>
+              <div>box 2</div>
+              <div>box 3</div>
+            </div>
+
+            <p class="text">
+              Mesmo com o width de 30%, não é possível colocar as três caixas
+              lado a lado, devido ao padding. Com <code>border-box</code>, isso
+              se resolve:
+            </p>
+
+            <div id="ex4page">
+              <div class="border-box">box 1</div>
+              <div class="border-box">box 2</div>
+              <div class="border-box">box 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

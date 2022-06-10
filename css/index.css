@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* @import precisa ser importado depois do charset */
+
+
+
+/* Basic  */
+body {
+  font-family: 'Roboto-mono', monospace;
+  background-color: black;
+  color: white;
+  color-scheme: dark;
+  size: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+
+/* Menu Styling */
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  color: hsl(0, 0%, 75%);
+}
+
+.grid-item {
+  font-size: 20px;
+  padding: 20px;
+  background-color: darkgoldenrod;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+
+
+
+}
+
+.grid-item:hover {
+  background-color: darkred;
+}
+
+/*Grid*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: auto;
+  box-sizing: border-box;
+  width: 60%;
+  column-gap: 5vh;
+  row-gap: 5vh;
+  justify-content: center;
+  margin: auto;
+}
+
+
+
+
+
+/* Animation */
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+  animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}

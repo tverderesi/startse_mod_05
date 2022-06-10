@@ -1,0 +1,154 @@
+/* Basic Elements */
+a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    border-color: black;
+    padding: 1px;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto-mono', monospace;
+    background-color: black;
+    color: white;
+    color-scheme: dark;
+    size: 12px;
+    margin-left: 30px;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+code {
+    size: 12px;
+    font-style: italic;
+    font-family: 'Roboto-mono', monospace;
+    background-color: rgb(39, 39, 39);
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 1;
+    z-index: -1;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5rem;
+    line-height: 1;
+
+}
+
+hr {
+    margin-right: 30px;
+
+}
+
+/*Basic Classes*/
+.text {
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.simple_box {
+    border: 1px white solid;
+    border-radius: 15px;
+    width: 90%;
+    min-height: 1em;
+    padding: 25px;
+
+}
+
+.center {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded_border {
+    border-radius: 15px;
+}
+
+.fancy_text {
+    font-family: 'Joan', serif;
+    text-align: justify;
+
+}
+
+.fancy_text h4 {
+    font-size: large;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Animation */
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+    animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+    animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}

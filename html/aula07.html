@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula07.css" />
+    <meta name="viewport" content="width=device-width" />
+    <style></style>
+    <title>Aula 07</title>
+  </head>
+  <body>
+    <h1 class="text-focus-in">Aula 07</h1>
+    <h2 class="text-focus-in">Flexbox</h2>
+    <hr class="text-focus-in" />
+    <div class="text-focus-in">
+      <div>
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </div>
+      <div>
+        <h3>Flexbox</h3>
+        <ul>
+          <li>Flexible box Layout Module</li>
+          <li>
+            Torna mais simples a criação de layouts sem usar
+            <code>float</code> e posicionamento;
+          </li>
+          <li>Visão geral:</li>
+          <ul>
+            <li>Flex Container;</li>
+            <li>Flex items;</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Flex Container</h3>
+        <ul>
+          <li>
+            Para se criar um flex container utiliza-se a propriedade display:
+            <code>.container {display: flex}</code>;
+          </li>
+          <li>As propriedades de um container são:</li>
+          <ul>
+            <li>Direção;</li>
+            <li>Quebra;</li>
+            <li>Alinhamento;</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Flex Container: Direção</h3>
+        <ul>
+          <li>A direção na qual os elementos serão dispostos</li>
+          <li>
+            A propriedade utilizada é <code>flex-direction</code>:
+            <code>.container {display: flex; flex-direction: column;}</code>;
+          </li>
+          <li>Os valores possíveis são:</li>
+          <ul>
+            <li><code>column</code>;</li>
+            <li><code>column-reverse</code>;</li>
+            <li><code>row;</code>;</li>
+            <li><code>row-reverse</code>;</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Flex Container: Quebra</h3>
+        <ul>
+          <li>
+            Define se os elementos deverão quebrar em linhas/colunas ou não;
+          </li>
+          <li>
+            A propriedade utilizada é <code>flex-wrap</code>:
+            <code>.container {display: flex; flex-wrap: wrap;}</code>
+          </li>
+          <li>Os valores possíveis são:</li>
+          <ul>
+            <li><code>wrap;</code></li>
+            <li><code>wrap-reverse;</code></li>
+            <li><code>nowrap;</code></li>
+          </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Flex Container: Alinhamento Horizontal</h3>
+        <ul>
+          <li>
+            Define como os elementos deverão ser alinhados horizontalmente;
+          </li>
+          <li>
+            A propriedade utilizada é <code>justify:content</code>:
+            <code>.container {display: flex; justify-content: center;}</code>;
+          </li>
+          <li>Os valores possíveis são:</li>
+          <ul>
+            <li><code>center</code>;</li>
+            <li><code>flex-start;</code>;</li>
+            <li><code>flex-end;</code>;</li>
+            <li><code>space-around</code>;</li>
+            <li><code>space-between</code>;</li>
+          </ul>
+        </ul>
+      </div>
+      <div>
+        <h3>Flex Container: Alinhamento Vertical</h3>
+        <ul>
+          <li>Define como os elementos deverão ser alinhados verticalmente;</li>
+          <li>
+            A propriedade utilizada é <code>align-items</code>:
+            <code>.container {display: flex; align-items: center;}</code>;
+          </li>
+          <li>Os valores possíveis são:</li>
+          <ul>
+            <li><code>center</code>;</li>
+            <li><code>flex-start;</code>;</li>
+            <li><code>flex-end;</code>;</li>
+            <li><code>stretch</code>;</li>
+            <li><code>baseline</code>;</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Exemplo 1:</h3>
+        <div class="simple_box">
+          <div>
+            Esta caixa mostra como os elementos <code>div</code> são
+            distribuídos facilmente utilizando a propriedade
+            <code>display-flex</code>:
+          </div>
+          <br />
+          <div class="flex-container flex-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+          <br />
+          <div>
+            Esta caixa mostra como os elementos <code>div</code> são
+            distribuídos facilmente utilizando a propriedade
+            <code>{flex-wrap: wrap;}</code>, o
+            <code>{flex-direction: column}</code> os organiza verticalmente:
+          </div>
+
+          <div class="flex-container flex-column flex-wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+        </div>
+
+        <p>
+          Esta propriedades permitem criar layouts de maneira simples e rápida.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

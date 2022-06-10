@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Roboto-mono', monospace;
+  background-color: black;
+  color: white;
+  color-scheme: dark;
+  size: 12px;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+code {
+  size: 12px;
+  font-style: italic;
+  font-family: 'Roboto-mono', monospace;
+  background-color: rgb(39, 39, 39);
+}
+
+
+.box {
+  height: 60%;
+  width: 60%;
+  background-color: rgb(0, 0, 59);
+  border: 1px whitesmoke dashed;
+  text-align: center;
+  position: relative;
+  margin: .5%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+}
+
+.text {
+  box-sizing: border-box;
+  margin: 50px;
+}
+
+.a52 {
+  margin-left,
+  margin-right: auto;
+}
+
+.ex1 {
+  height: 100px;
+  width: 300px;
+  border: 10px whitesmoke solid;
+  background-color: darkgoldenrod;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ex2 {
+  height: 100px;
+  width: 300px;
+  border: 10px whitesmoke solid;
+  background-color: darkblue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+#border {
+  background-color: darkred;
+  width: 90%;
+}
+
+#espint {
+  background-color: darkgoldenrod;
+  width: 90%;
+}
+
+#content {
+  background-color: darkgreen;
+  width: 90%;
+}
+
+.simplebox {
+  border: 1px white solid;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 90%;
+  min-height: 1em;
+  position: relative;
+
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+#ex3page div {
+  border: 1px solid whitesmoke;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: darkgoldenrod;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+
+#ex4page div {
+  border: 1px solid whitesmoke;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  background-color: darkgoldenrod;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 3px;
+  border-color: black;
+  padding: 1px;
+  margin-top: 1px;
+  font-weight: bold;
+}
+
+#backbutton:hover {
+  background-color: darkgoldenrod;
+  color: whitesmoke;
+}
+
+
+.block {
+  display: block;
+}
+
+.a53 {
+  width: 100%;
+  border: 1px whitesmoke;
+  display: block;
+  margin: auto;
+
+
+}
+
+.a54 {
+  width: 100%;
+  border: 1px whitesmoke;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+
+}
+
+/* Animation */
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both;
+  animation: tracking-in-expand 1s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both;
+  animation: text-focus-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0
+  }
+
+  40% {
+    opacity: .6
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}

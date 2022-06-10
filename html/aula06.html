@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula06.css" />
+    <meta name="viewport" content="width=device-width" />
+    <style></style>
+    <title>Aula 06</title>
+  </head>
+  <body>
+    <h1 class="text-focus-in">Aula 06</h1>
+    <h2 class="text-focus-in">Float</h2>
+    <hr class="text-focus-in" />
+    <div class="text-focus-in">
+      <div>
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </div>
+      <div id="a061">
+        <h3>Flutuando elementos</h3>
+        <ul>
+          <li>
+            A propriedade <strong>float</strong> define como um elemento deve
+            flutuar;
+          </li>
+          <li>
+            Este recurso é utilizado para posicionar o formato de um conteúdo;
+          </li>
+          <ul>
+            As opções de valores para esta propriedade são:
+            <li>
+              <strong>none</strong> - o elemento não irá flutuar
+              <i>valor padrão</i>
+            </li>
+            <li id="float_left">
+              <strong>left</strong> - o elemento irá flutuar para a esquerda da
+              caixa que está inserido;
+            </li>
+            <li id="float_right">
+              <strong>right</strong> - o elemento irá flutuar para a direta da
+              caixa que está inserido;
+            </li>
+          </ul>
+        </ul>
+
+        <h3>Cancelando o efeito do <i>float</i></h3>
+        <ul>
+          <li>
+            Para cancelar o efeito da propriedade <strong>float</strong>, é
+            necessário utilizar a propriedade <i>clear</i>.
+          </li>
+          <li>Os valores que a propriedade aceita são:</li>
+          <ul>
+            <li>
+              <strong>none</strong> - nada acontecerá <i>valor padrão</i>;
+            </li>
+            <li>
+              <strong>left</strong> - cancela os efeitos de um elemento que
+              recebeu o valor <a href="#float_left">float left</a>;
+            </li>
+            <li>
+              <strong>right</strong> - cancela os efeitos de um elemento que
+              recebeu o valor <a href="#float_right">float right</a>;
+            </li>
+            <li>
+              <strong>both</strong> - cancela os efeitos de um elemento que
+              recebeu o valor <a href="#float_left">float left</a> e
+              <a href="#float_left">right</a>;
+            </li>
+          </ul>
+        </ul>
+
+        <h3>Usando <i>float</i> para definir layouts</h3>
+        <ul>
+          <li>
+            definir blocos <code>div</code> com tamanhos
+            (<code>height</code>/<code>width</code>);
+          </li>
+          <li>fazer esses elementos flutuarem;</li>
+          <li>Definir margem e espaçamento necessário;</li>
+        </ul>
+        <h3>Exemplo 1:</h3>
+        <div id="a061exemplo" class="clearfix">
+          <div class="clearfix">
+            <div class="fancy_text">
+              <h4>Este parágrafo possui o atributo <code>float: right</code></h4>
+
+              <div>
+              <p>
+                <img
+                  class="rounded_border float_right"
+                  src="../media/aurora_borealis.webp"
+                  alt="aurora borealis"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at
+                est rhoncus, finibus sapien quis, cursus velit. Donec vel arcu a
+                diam efficitur blandit a eget ante. Pellentesque laoreet leo
+                vitae turpis fringilla, in aliquet tellus consectetur. Praesent
+                pulvinar congue lectus, sit amet gravida orci auctor ut. Donec
+                imperdiet odio mattis nulla blandit lobortis. Mauris rutrum
+                purus in sapien malesuada semper. Donec accumsan ultrices mi,
+                consequat tincidunt velit gravida sit amet. Maecenas auctor
+                augue at dignissim sollicitudin. Aliquam id sapien aliquam,
+                ultricies enim at, luctus nisl. Curabitur orci orci, consequat
+                ut blandit vel, luctus fermentum ligula. Nullam a neque eget
+                sapien tristique ullamcorper.
+              </p>
+
+              <h4 class="clear_both">Este parágrafo possui o atributo <code>clear: both</code></h4>
+
+              <p class="clear_both">
+                Maecenas a risus non lacus dapibus gravida vitae vel elit.
+                Praesent venenatis tincidunt consequat. Vestibulum eget neque
+                ullamcorper, ultricies purus a, aliquam orci. Aliquam nec elit
+                vel est condimentum vehicula. Ut fringilla vitae metus a
+                sodales. Praesent non eros non elit mollis viverra. Integer est
+                nibh, egestas et odio a, pulvinar auctor arcu. Etiam finibus ex
+                cursus cursus sodales. Nullam quis metus vestibulum, vulputate
+                quam sit amet, posuere risus. Sed id viverra nisl, at
+                sollicitudin dui. Sed non lectus ut nisi sodales aliquam vel sed
+                massa. Ut rutrum sapien quis urna vestibulum lacinia. Maecenas
+                malesuada molestie libero, a placerat eros. Integer urna magna,
+                malesuada ut ullamcorper vitae, tincidunt vel nunc. Praesent
+                rutrum massa at mollis lobortis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3> Exemplo 2:</h3>
+      <div id="a061exemplo2" class="clearfix">
+        <div class="clearfix">
+        <h4 class="text">Este blocos contém a propriedade <code>float: right</code>. Os blocos aparecem de maneira invertida ao que foram escritos.</h4>
+        
+          
+        <code class="text">&lt;div id="page"&gt;</code><br>
+        <code class="text">&lt;div class="col3"&gt;Bloco 1&lt;/div&gt;</code><br>
+        <code class="text">&lt;div class="col4"&gt;Bloco 2&lt;/div&gt;</code><br>
+        <code class="text">&lt;div class="col3"&gt;Bloco 3&lt;/div&gt;</code><br>
+        <code class="text">&lt;/div&gt; </code><br>
+        <br>
+        <br>
+        <div id="page">
+        <div class="col3">Bloco 1</div>
+        <div class="col4">Bloco 2</div>
+        <div class="col3">Bloco 3</div>
+      </div>
+      </div>
+      
+      
+      </div>
+    </div>
+  </body>
+</html>

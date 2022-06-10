@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula09.css" />
+    <meta name="viewport" content="width=device-width" />
+    <style></style>
+    <title>Aula 09</title>
+  </head>
+  <body>
+    <!-- BASIC PART -->
+    <div class="text-focus-in">
+      <header>
+        <h1>Aula 09</h1>
+        <h2>Pilha dos Elementos</h2>
+        <hr />
+
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </header>
+
+      <!-- AULA 09 -->
+      <section>
+        <h3>Pilha dos elementos</h3>
+        <ul>
+          <li>
+            Diferentes elementos em CSS podem ocupar o mesmo espaço (x,y);
+          </li>
+          <li>Por padrão os elementos serão empilhados num eixo z;</li>
+          <li>O último elemento declarado será o elemento visível;</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Alterando a ordem dos elementos no eixo z</h3>
+        <ul>
+          <li>
+            A propriedade <code>z-index</code> permite definir qual a ordem de
+            visualização dos elementos;
+          </li>
+          <li>
+            Funciona apenas para elementos
+            <strong>posicionais</strong> (absoluto, relativo, fixo e sticky);
+          </li>
+          <li>Quanto maior o valor mais a frente ele estará;</li>
+          <li>Exemplo: <code>p {z-index: -1;}</code></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Overflow</h3>
+        <ul>
+          <li>
+            É possível controlar o comportamento dos elementos de blocos quando
+            o conteúdo é maior do que os limites do elemento;
+          </li>
+          <li>
+            Isso é realizado a partir da propriedade <code>overflow</code>;
+          </li>
+          <li>os valores possíveis para esta propriedade são:</li>
+          <ul>
+            <li><code>visible</code>;</li>
+            <li><code> hidden</code>;</li>
+            <li><code>scroll</code>;</li>
+            <li><code>auto</code>;</li>
+          </ul>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Exemplo <code>z-index</code>:</h3>
+        <p class="text">
+          Observe as caixas com cada uma das camadas (Layer 1, 2 e 3) e como
+          cada uma se sobrepõe a outra.
+        </p>
+        <div class="simple_box">
+          <div class="container">
+            <div class="box1 z1">Layer 1 <br /><i>z-index: 1;</i></div>
+            <div class="box2 z2">Layer 2 <br /><i>z-index: 2;</i></div>
+            <div class="box3 z3">Layer 3 <br /><i>z-index: 3;</i></div>
+          </div>
+        </div>
+        <div style="min-height: 5vh"></div>
+
+        <p class="text">
+          Observe a inversão das camadas 1 e 3. Como a camada 3 não possui cor
+          de fundo, é possível ver os outros elementos abaixo.
+        </p>
+        <div class="simple_box">
+          <div class="container">
+            <div class="box1 z3">Layer 3 <br /><i>z-index: 3;</i></div>
+            <div class="box2 z2">Layer 2 <br /><i>z-index: 2;</i></div>
+            <div class="box3 z1">Layer 1 <br /><i>z-index: 1;</i></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Exemplo <code>overflow</code>:</h3>
+        <p>
+          A caixa Exemplo construída no
+          <a href="aula04.html#a04e3">Exemplo 3, Aula 04</a> sobre
+          posicionamento <code>sticky</code> foi utilizado a propriedade
+          <code>overflow: scroll</code>.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

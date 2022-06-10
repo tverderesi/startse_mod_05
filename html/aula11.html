@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--  códificação dos caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/aula11.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aula 11</title>
+  </head>
+  <body>
+    <!-- BASIC PART -->
+    <div class="text-focus-in">
+      <header>
+        <h1>Aula 11</h1>
+        <h2>Fontes</h2>
+        <hr />
+
+        <a id="backbutton" href="index.html"> &lt; Índice </a>
+      </header>
+
+      <!-- AULA 11 -->
+      <section>
+        <h3>Fontes</h3>
+        <ul>
+          <li>Uma característica visual importante para um site;</li>
+          <li>As fontes podem criar uma identidade com a marca;</li>
+          <li>Facilitam ou dificultam a leitura do texto;</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Família de Fontes</h3>
+        <ul>
+          <li>Existem cinco famílias genéricas de fontes:</li>
+          <ul>
+            <li>Serif (impressão);</li>
+            <h3 style="font-family: serif; font-size: large">
+              Exemplo de Fonte Serifada
+            </h3>
+            <li>Sans-serif (tela);</li>
+            <h3 style="font-family: sans-serif; font-size: large">
+              Exemplo de Fonte Não Serifada
+            </h3>
+            <li>monospace</li>
+            <h3 style="font-family: monospace; font-size: large">
+              Exemplo de Fonte Monospace
+            </h3>
+            <li>cursive</li>
+            <h3 style="font-family: cursive; font-size: large">
+              Exemplo de Fonte Cursive
+            </h3>
+            <li>fantasy</li>
+            <h3 style="font-family: Papyrus; font-size: large">
+              Exemplo de Fonte Fantasy
+            </h3>
+          </ul>
+          <li>
+            Serifas: Na tipografia, as serifas são os pequenos traços e prolongamentos que ocorrem
+            no fim das hastes das letras.
+            <a href="https://pt.wikipedia.org/wiki/Serifa#cite_note-1">
+              Fonte.</a >
+          </li>
+        </ul>
+        <h3>Sobreposição de fontes com e sem Serifa:</h3>
+        <div id="fontsanser" class="simple_box">
+          <figure>
+            <figcaption>serif</figcaption>
+            <span class="serif">F</span>
+          </figure>
+
+          <figure>
+            <figcaption>sans-serif</figcaption>
+            <span class="sans-serif">F</span>
+          </figure>
+
+          <figure style="justify-content: end">
+            <div style="position: absolute">
+              <div class="position serif">F</div>
+              <div class="position2 sans-serif">F</div>
+            </div>
+            <figcaption>Sobrepostas</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h3>Uso de Fontes</h3>
+        <ul>
+          <li>As fontes devem estar presentes no cliente;</li>
+          <li>
+            A propriedade que define os nomes de fontes é
+            <code>font-family</code>, i.e.
+            <code>p {font-family: Arial, Helvetica, sans-serif</code>;
+          </li>
+          <li>
+            Fontes seguras definem fontes que provavelmente vão estar disponíveis (fontes instaladas
+            no Windows, por exemplo);
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Estilizando Fontes</h3>
+        <ul>
+          <li>
+            Estilo itálico: é definido utilizando a propriedade
+            <code>font-style</code>
+          </li>
+          <ul>
+            <li>
+              os valores permitidos são: <code>normal / italic / oblique</code>, i.e. <code>p
+              {font-style: italic;} </code>;
+            </li>
+            <li style="font-style: italic">Exemplo de fonte em itálico;</li>
+          </ul>
+          <li><h4>Estilo Negrito</h4></li>
+          <ul>
+            <li>
+              Este estilo é definido pela propriedade <code>font-weight</code>
+            </li>
+            <li>Os valores permitidos são:</li>
+            <ul>
+              <li>normal</li>
+              <li>bold</li>
+              <li>bolder</li>
+              <li>lighter</li>
+              <li>numér entre 100 (thin) e 9000 (Heavy)</li>
+            </ul>
+            <li style="font-weight: 900">Exemplo de fonte em negrito</li>
+          </ul>
+          <li><h4>Estilo Caixa Alta</h4></li>
+          <ul>
+            <li>
+              Para definir como a transformação de caixa alta utilize
+              <code>font-variation: small-caps</code>
+            </li>
+            <li style="font-variation: small-caps">
+              Exemplo de fonte em Caixa Alta (Small Caps);
+            </li>
+          </ul>
+          <li><h4>Estilo Condensado/Expandido</h4></li>
+          <ul>
+            <li>
+              Para definir o texto em condensado ou expandido use
+              <code>font-strech</code>;
+            </li>
+            <li>
+              os valores permitidos vão de <code>ulta-condensed</code> até
+              <code>ultra-expanded</code>;
+            </li>
+            <li style="font-family: sans-serif; font-stretch: condensed">
+              Exemplo de fonte condensada
+            </li>
+          </ul>
+          <li><h4>Tamanho</h4></li>
+          <ul>
+            <li>
+              Para definir o tamanho da fonte utilize <code>font-size</code>;
+            </li>
+            <li>
+              Os valores permitidos podem ser colocados em unidades de medidas absolutas (ex. px,
+              pc, etc.) ou relativas (em, rem, vh, etc.);
+            </li>
+            <li style="font-size: 3vh">
+              Esta é uma fonte com tamanho 3vh (3% do viewport height).
+            </li>
+          </ul>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Importando Fontes</h3>
+        <ul>
+          <li>
+            Podemos utilizar fontes de outras partes, como por exemplo o
+            <a href="fonts.google.com">Google Fonts</a>;
+          </li>
+          <li>
+            As fontes devem ser importadas no arquivo css através do comando
+            <code>import</code>;
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Web Fontes</h3>
+        <ul>
+          <li>Possível disponibilizar um fonte própria;</li>
+          <li>
+            O uso de web fontes permite ao desenvolvedor utilizar uma fonte própria;
+          </li>
+          <li>Utiliza-se a regra <code>@font-face</code>;</li>
+          <li>Formatos de fonte suportados:</li>
+          <ul>
+            <li>TrueType Fonts (TTF);</li>
+            <li>OpenType Fonts (OTF);</li>
+            <li>The Web Open Font Format (WOFF & WOFF 2.0);</li>
+            <li>SVg Fonts/Shapes;</li>
+            <li>Embbeded OpenType Fonts (EOT);</li>
+          </ul>
+        </ul>
+      </section>
+      <section>
+        <h3>Utilizando <code>@font-face</code></h3>
+        <ul>
+          <li>Utilizado para definir o nome da fonte;</li>
+          <li>
+            Sintaxe:<code >@font-face {font-family: FontName; src: url(FontPath.woff)</code >;
+          </li>
+          <li>Exemplo de Uso: <code> div { font-family: FontName} </code>;</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
